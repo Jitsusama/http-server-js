@@ -5,12 +5,12 @@
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "https://github.com/Jitsusama/http-server-js"
+    "url": "https://github.com/jitsusama/http-server-js"
   },
   "bugs": {
-    "url": "https://github.com/Jitsusama/http-server-js/issues"
+    "url": "https://github.com/jitsusama/http-server-js/issues"
   },
-  "homepage": "https://github.com/Jitsusama/http-server-js",
+  "homepage": "https://github.com/jitsusama/http-server-js",
   "main": "src/index.js",
   "engines": {
     "node": "^14.17.0"
@@ -20,10 +20,10 @@
     "test": "jest --ci --silent --noStackTrace --bail=1"
   },
   "dependencies": {
+    "@jitsusama/logging-js": "^1.0.0-rc.3",
     "express": "^4.17.1"
   },
   "devDependencies": {
-    "got": "^11.8.2",
     "@types/jest": "^26.0.24",
     "eslint": "^7.31.0",
     "eslint-config-prettier": "^8.3.0",
@@ -33,6 +33,7 @@
     "eslint-plugin-prettier": "^3.4.0",
     "eslint-plugin-promise": "^5.1.0",
     "eslint-plugin-unicorn": "^34.0.1",
+    "got": "^11.8.2",
     "jest": "^27.0.6",
     "jest-extended": "^0.11.5",
     "prettier": "^2.3.2"
