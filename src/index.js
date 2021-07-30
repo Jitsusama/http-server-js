@@ -6,10 +6,11 @@ const express = require("express");
 class Server {
   /**
    * Create a new HTTP server.
+   * @constructor
    * @param {object} [options] - configuration options
    * @param {number | string} [options.port=8080] - port number to listen on
    * @param {RequestRouter[]} options.routers - request routers
-   * @param {object} [options.logs] - logging options
+   * @param {object} [options.logs] - logging configuration
    * @param {string} [options.logs.layer="http-server"] - layer to log as
    * @param {string} [options.logs.level="silent"] - logging level
    */
@@ -30,6 +31,7 @@ class Server {
 
   /**
    * Start the server.
+   * @method
    * @returns {Promise<void>}
    */
   async start() {
@@ -54,6 +56,7 @@ class Server {
 
   /**
    * Stop the server.
+   * @method
    * @returns {Promise<void>}
    */
   async stop() {
@@ -69,6 +72,7 @@ class Server {
 
 /**
  * Wraps request handler logic so it is middleware friendly.
+ * @function
  * @param {function(express.Request, express.Response):Promise<void>} logic
  * @returns {express.RequestHandler}
  */
