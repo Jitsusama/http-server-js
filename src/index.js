@@ -26,7 +26,6 @@ class Server {
 
     this.port = Number.parseInt(port);
     this.log = logger;
-    this.server = http.createServer();
   }
 
   /**
