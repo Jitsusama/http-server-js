@@ -1,7 +1,7 @@
 {
   "name": "@jitsusama/http-server-js",
   "description": "A simple HTTP server that meets a narrow set of needs.",
-  "version": "1.0.0-rc.2",
+  "version": "1.0.0-rc.3",
   "license": "MIT",
   "repository": {
     "type": "git",
@@ -20,7 +20,7 @@
     "test": "jest --ci --silent --noStackTrace --bail=1"
   },
   "dependencies": {
-    "@jitsusama/logging-js": "^1.0.0-rc.3",
+    "@jitsusama/logging-js": "^1.0.0-rc.10",
     "express": "^4.17.1"
   },
   "devDependencies": {
@@ -28,7 +28,7 @@
     "eslint": "^7.32.0",
     "eslint-config-prettier": "^8.3.0",
     "eslint-plugin-import": "^2.24.2",
-    "eslint-plugin-jest": "^24.5.0",
+    "eslint-plugin-jest": "^24.5.2",
     "eslint-plugin-node": "^11.1.0",
     "eslint-plugin-prettier": "^4.0.0",
     "eslint-plugin-promise": "^5.1.0",
