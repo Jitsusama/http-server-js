@@ -16,7 +16,7 @@ class Server {
    */
   constructor(options) {
     const { port = "8080", routers = [], logs } = options || {};
-    const { layer = "http-server", level = "silent" } = logs || {};
+    const { layer = "http-server", level } = logs || {};
     const logger = logging.getLogger(layer, level);
 
     this.app = express();
