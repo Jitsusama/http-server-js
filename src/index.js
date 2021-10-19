@@ -12,7 +12,7 @@ class Server {
    * @param {RequestRouter[]} options.routers - request routers
    * @param {object} [options.logs] - logging configuration
    * @param {string} [options.logs.layer="http-server"] - layer to log as
-   * @param {string} [options.logs.level="silent"] - logging level
+   * @param {string} [options.logs.level] - logging level
    */
   constructor(options) {
     const { port = "8080", routers = [], logs } = options || {};
